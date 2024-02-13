@@ -6,121 +6,134 @@
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<!--
-    - added bootstrap
-    - updated bio
-    - added sections for portfolio artifacts and contact
-    - added portfolio artifacts with videos
-    - updated contact links
--->
-
 <body>
-    <div class="container">
-        <hr>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="nav">
+            <a class="navbar-brand" href="#about">About</a>
+            <a class="navbar-brand" href="#portfolio">Portfolio</a>
+            <a class="navbar-brand" href="#contact">Contact</a>
+        </div>
+    </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="about"></div>
+        </div>
         <div class="row">
             <img class="col-md-6" src="image.png" alt="yellow alien">
             <div class="col-md-6">
                 <h1>Emily Liu</h1>
                 <h4>Game Developer</h4>
                 <p>
-                    I am an undergraduate student from Boise State University studying Games,
-                    Interactive Media, and Mobile Technology. I specialize in Game Development, 3D Modeling, and Digital
-                    Art.
+                    Hello, my name is Emily and I am an undergraduate student from Boise State University studying
+                    Games,
+                    Interactive Media, and Mobile Technology.
                 </p>
+                <p>I specialize in Game Development, 3D Modeling, and Digital
+                    Art.</p>
+                <p>I created this website to showcase all the projects I've worked on.</p>
             </div>
         </div>
 
-        <hr>
-
-        <div class="row">
-            <h1 class="col-md-12">
-                School Projects
-            </h1>
-        </div>
-
-        <div class="row">
+        <div class="row" id="portfolio">
+            <div class="col-md-12">
+                <h1>
+                    School Projects
+                </h1>
+            </div>
             <div class="col-md-6">
-                <iframe src="https://www.youtube.com/embed/y1xg2xKRA0E"></iframe>
+                <hr>
+                <iframe src="https://www.youtube.com/embed/y1xg2xKRA0E" allowfullscreen></iframe>
                 <h4>Galactic Pizza Party</h4>
                 <p>Galactic Pizza Party is a Unity VR game, built for Quest 2, where you deliver pizzas to aliens by
                     swinging around the city. The video shows an older concept where the player originally deliver
-                    packages. After some classmates played the game, they kept referencing Spider-Man and pizza so I
-                    decided to change it to that. I will update the video soon.</p>
+                    packages. I will update the project soon.</p>
                 <p>Alien model was made using Adobe Photoshop and Autodesk Maya.</p>
-                <hr>
-            </div>
-            <div class="col-md-6">
-                <iframe src="https://www.youtube.com/embed/F7pF-Mq0cNY"></iframe>
-                <h4>Mantis</h4>
-                <p>Mantis is a 2D side-scroller where you play as a mantis fighter looking for their bag that was stolen
-                    from sharks. This project was my first introduction to Unity.</p>
-                <p>Characters and animated cutscene was made using Adobe Animate. Other visual assets were made with
-                    paint.NET.</p>
-                <hr>
-            </div>
-        </div>
 
-        <div class="row">
+            </div>
+
             <div class="col-md-6">
-                <iframe src="https://www.youtube.com/embed/_YFre7KWg8s"></iframe>
+                <hr>
+                <iframe src="https://www.youtube.com/embed/_YFre7KWg8s" allowfullscreen></iframe>
                 <h4>Abattoir</h4>
-                <p>Abbatoir is a 2D side-scroller that uses a webcam, Victorian calling cards, and an optional Victorian
+                <p>Abattoir is a 2D side-scrolling game that uses a webcam, Victorian calling cards, and an optional
+                    Victorian
                     trivia sheet to unlock doors in a dark castle. This project was created with 4 other students, and
                     made in Unity with Vuforia for AR Image Tracking.</p>
                 <p>My contributions to the project was providing code for player movement and falling platforms,
                     animating the enemies, and testing the AR Image Tracking.</p>
             </div>
-        </div>
 
-        <hr>
 
-        <div class="row">
-            <h1 class="col-md-12">
-                Personal Projects
-            </h1>
         </div>
 
         <div class="row">
             <div class="col-md-6">
-                <iframe src="https://www.youtube.com/embed/ZDomwZPZMnE"></iframe>
-                <h4>Plants vs Bugs</h4>
+                <hr>
+                <iframe src="https://www.youtube.com/embed/F7pF-Mq0cNY" allowfullscreen></iframe>
+                <h4>Mantis</h4>
+                <p>Mantis is a 2D side-scrolling game where you play as a mantis fighter looking for their bag that was
+                    stolen
+                    from sharks. This project was my first introduction to Unity and game development.</p>
+                <p>Characters and animated cutscene was made using Adobe Animate. Other visual assets were made with
+                    paint.NET.</p>
+            </div>
+
+            <div class="col-md-6">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>
+                    Personal Projects
+                </h1>
+            </div>
+
+            <div class="col-md-6">
+                <hr>
+                <a href="https://kerihalfacre.itch.io/in-the-bayou" target="_blank"><img id="portfolioImage"
+                        src="InTheBayou.png" alt="in the bayou"></a>
+                <a href="https://kerihalfacre.itch.io/in-the-bayou" target="_blank">
+                    <h4>In The Bayou</h4>
+                </a>
+                <p>In The Bayou is a supernatural, horror visual novel made for the Bad Art Visual Novel Jam. This was
+                    made in Renpy with 2 other developers. The theme for the jam was "Transformation".</p>
+                <p>My contributions to the project was programming all the dialogue and player choices.</p>
+            </div>
+
+            <div class="col-md-6">
+                <hr>
+                <iframe src="https://www.youtube.com/embed/ZDomwZPZMnE" allowfullscreen></iframe>
+                <a href="https://gerzytet.itch.io/plants-vs-bugs" target="_blank">
+                    <h4>Plants vs Bugs</h4>
+                </a>
                 <p>Plants vs Bugs is a 2D top-down game inspired by Plants vs Zombies and Bloons TD. This was made in
                     Unity with 4 other developers and 4 composers for the Game/Music Jam 2022. The theme for the jam was
                     "Growth".</p>
                 <p>My contributions to the project was creating all the visual assets, testing, and editing the trailer.
                 </p>
             </div>
-            <div class="col-md-6">
-                <p>INSERT VIDEO LINK AND/OR PHOTOS HERE</p>
-                <h4>In The Bayou</h4>
-                <p>In The Bayou is a supernatural, horror visual novel made for the Bad Art Visual Novel Jam. This was
-                    made in Renpy with 2 other developers. The theme for the jam was "Transformation".</p>
-                <p>My contributions to the project was programming all the dialogue and player choices.</p>
+        </div>
+
+        <div id="contact">
+            <div class="row text-center">
+                <div class="col-md-12" id="contactSection">
+                    <h1>Contact Me</h1>
+                    <a href="mailto:emilyliu1144@gmail.com"><img src="email.png" class="icon" alt="email"></a>
+                    <a href="https://www.linkedin.com/in/xiao-lan-l-3371971aa/" target="_blank"><img src="linkedin.png"
+                            class="icon" alt="linkedin"></a>
+                    <a href="https://www.youtube.com/channel/UCf1lrFXQOqfI0zbVXgK91xA/featured" target="_blank"><img
+                            src="youtube.png" class="icon" alt="youtube"></a>
+                    <a href="https://emilyliu1144.itch.io/" target="_blank"><img src="itchio.png" class="icon"
+                            alt="itchio"></a>
+                </div>
             </div>
         </div>
-
-        <hr>
-
-        <div class="row">
-            <h1 class="col-md-12">
-                Contact Me
-            </h1>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <a href="https://www.linkedin.com/in/xiao-lan-l-3371971aa/">LinkedIn Profile</a>
-                <a href="https://www.youtube.com/channel/UCf1lrFXQOqfI0zbVXgK91xA/featured">YouTube Channel</a>
-                <a href="https://emilyliu1144.itch.io/">Itch.io</a>
-                <a href="mailto:emilyliu1144@gmail.com">Send email</a>
-            </div>
-        </div>
-
-        <hr>
-
 </body>
 
 </html>
