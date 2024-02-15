@@ -55,7 +55,8 @@ iframe {
 }
 
 #contactSection,
-#contactSection>h1 {
+#contactSection>h1,
+#contactSection>p {
     background-color: #236890;
     color: #ebebeb;
     text-align: center;
@@ -73,10 +74,17 @@ iframe {
 }
 
 .icon {
-    max-height: 64px;
+    max-height: 80px;
     width: auto;
     height: auto;
     text-align: center;
     padding: 1%;
     background-color: #236890;
+}
+
+#profilepic > img {
+    max-height: 70px;
+    max-width: 70px;
+    width: auto;
+    height: auto;
 }
