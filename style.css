@@ -95,8 +95,7 @@ iframe {
 }
 
 #profilepic > img {
-    max-height: 70px;
-    max-width: 70px;
+    aspect-ratio: 1/1;
     width: auto;
     height: auto;
 }
