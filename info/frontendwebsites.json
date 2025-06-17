@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Shrimp Mobile Data Narrative",
+    "projectType": "Solo Project",
+
+    "projectDescription": "Shrimp Mobile Data Narrative is a website about the different types of shrimps discovered and where you can find them. While there are over 2000 species of shrimps in the world, this website only show shrimps that start from 'A' to 'C' from the Integrated Taxonomic Information System and SeaLifeBase database search. The data visualizations shown in the website are Word Cloud, Radial Dendrogram, and Density 2D Hexbin Chart. There is also a React Data Table near the end to show all the shrimps used. Wikipedia was used to explain what shrimps are, and the different environments they appear in.",
+
+    "projectCreation": "This project was created with HTML, CSS, and JavaScript. It uses Bootstrap to make the website mobile-friendly, D3 to create the data visualizations, and React to make it run efficiently.",
+
+    "media": {
+      "type": "video",
+      "src": "https://www.youtube.com/embed/FNNYC8rq_D0",
+      "title": "shrimpdata"
+    },
+    "link": "n/a"
+  },
+  {
+    "title": "Earth Defense Force CRUD API Mobile Website",
+    "projectType": "Solo Project",
+
+    "projectDescription": "",
+
+    "projectCreation": "",
+
+    "media": {
+      "type": "video",
+      "src": "",
+      "title": "crudapi"
+    },
+    "link": "n/a"
+  },
+  {
+    "title": "Games, Interactive Media, and Mobile Technology (GIMM) Alumni Website",
+    "projectType": "Team Project",
+
+    "projectDescription": "",
+
+    "projectCreation": "",
+
+    "media": {
+      "type": "video",
+      "src": "",
+      "title": "gimmalumni"
+    },
+    "link": "https://gimmalumni.com/"
+  },
+  {
+    "title": "Blue Note Reserve Mobile App",
+    "projectType": "Team Project",
+
+    "projectDescription": "",
+
+    "projectCreation": "",
+
+    "media": {
+      "type": "video",
+      "src": "",
+      "title": "bluenotereserve"
+    },
+    "link": "n/a"
+  }
+]
