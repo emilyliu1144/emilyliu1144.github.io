@@ -18,9 +18,9 @@
     "title": "Earth Defense Force CRUD API Mobile Website",
     "projectType": "Solo Project",
 
-    "projectDescription": "",
+    "projectDescription": "Earth Defense Force (EDF) CRUD API Mobile Website is a website where you create your soldier to fight an alien invasion in the video game, Earth Defense Force 6. There is an About Page that give information about the game, the different classes you can play as, and trailers showing the gameplay. You create your soldier by entering a callsign, selecting a class, what they look like, their fighting style, where they'd like to deploy, their favorite enemy to fight, their least favorite enemy to fight, and a motivational photo to upload in the Form Page. After your soldier form is sent, it's entered into a MySQL database and shown in the Filter Form Page where you can filter the data. The filters include their callsign, class, outfit, fighting style, if they played EDF 5 before, how long their callsign is, and how many entries can be shown. For each entry on the database, you can either edit the information or delete it.",
 
-    "projectCreation": "",
+    "projectCreation": "This project was created with HTML, CSS, and Javascript. It uses Bootstrap to make the website mobile-friendly, MySQL for the back-end functionality, and React to make it run efficiently.",
 
     "media": {
       "type": "video",
@@ -33,9 +33,9 @@
     "title": "Games, Interactive Media, and Mobile Technology (GIMM) Alumni Website",
     "projectType": "Team Project",
 
-    "projectDescription": "",
+    "projectDescription": "Games, Interactive Media, and Mobile Technology (GIMM) Alumni Website is a website where GIMM alumni can connect with each other and post job listings for others to view. There is an interactive map to show the alumni across the world, and a senior showcase page for each cohort. A survey page is available for them to fill out and update their information. And an admin account for the GIMM Department to use to verify the forms before sending to the MySQL database.",
 
-    "projectCreation": "",
+    "projectCreation": "This project was created with 9 other students, advised by a GIMM professor, and made with React and AWS. We worked with a client, another GIMM professor, to create this website as a hub for alumni of the program to connect, and showcase senior projects from each cohort. My contributions to the project was creating and styling the Senior Showcase Page, based off the Figma design, using HTML and CSS.",
 
     "media": {
       "type": "video",
@@ -48,9 +48,9 @@
     "title": "Blue Note Reserve Mobile App",
     "projectType": "Team Project",
 
-    "projectDescription": "",
+    "projectDescription": "Blue Note Reserve is a React Native app that allows students in Boise State University's Music Department to reserve practice rooms in the Morrison Center, and earn badges and titles for using them. This app is planned to link with Zoom Rooms, Google Calendar, and Discord. It will be available for students to download on Android and iOS. Zoom Rooms allows students and professors to see if the room is occupied, Google Calendar is used to add your practice room reservation, and Discord to showcase the students' unlocked badges and titles based on their time in the practice rooms. The basic functionality of the app is completed; UI/UX, page styles, some unfinished features and publishing will be given to the next team of students to finish.",
 
-    "projectCreation": "",
+    "projectCreation": "This project was created with 7 other students, and made with React Native. We worked with a client, a professor from the music department, to create this app and modernize their room reservation system. My contributions to the project was creating and styling the the Home Page, and started on the Badges and Titles Page. I've created the other pages for the next team to work on.",
 
     "media": {
       "type": "video",

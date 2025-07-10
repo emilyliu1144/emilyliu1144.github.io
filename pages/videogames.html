@@ -46,8 +46,9 @@
                         <div class="col-xs-auto">
                             <a href="mailto:emilyliu1144@gmail.com"><img src="../icons/email.png" class="icon img-fluid"
                                     alt="email" loading="lazy"></a>
-                            <a href="https://www.linkedin.com/in/xiao-lan-liu/" target="_blank"><img src="../icons/linkedin.png"
-                                    class="icon img-fluid" alt="linkedin" loading="lazy"></a>
+                            <a href="https://www.linkedin.com/in/xiao-lan-liu/" target="_blank"><img
+                                    src="../icons/linkedin.png" class="icon img-fluid" alt="linkedin"
+                                    loading="lazy"></a>
                             <a href="https://www.youtube.com/channel/UCf1lrFXQOqfI0zbVXgK91xA/featured"
                                 target="_blank"><img src="../icons/youtube.png" class="icon img-fluid" alt="youtube"
                                     loading="lazy"></a>
@@ -63,80 +64,107 @@
 </body>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    fetch('../info/videogames.json')
-        .then(response => response.json())
-        .then(data => {
-            const container = document.getElementById('portfolioRow');
-            container.innerHTML = ''; // Clear existing content
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('../info/videogames.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('portfolioRow');
+                container.innerHTML = ''; // Clear existing content
 
-            data.reverse().forEach(project => {
-                const col = document.createElement('div');
-                col.className = "col-md-6";
+                data.reverse().forEach(project => {
+                    const col = document.createElement('div');
+                    col.className = "col-md-6";
 
-                const hr = document.createElement('hr');
-                col.appendChild(hr);
+                    const hr = document.createElement('hr');
+                    col.appendChild(hr);
 
-                if (project.media.type === 'image') {
-                    const a = document.createElement('a');
-                    a.href = project.link !== 'n/a' ? project.link : '#';
-                    a.target = '_blank';
+                    if (project.media.type === 'image') {
+                        const a = document.createElement('a');
+                        a.href = project.link !== 'n/a' ? project.link : '#';
+                        a.target = '_blank';
 
-                    const img = document.createElement('img');
-                    img.id = 'portfolioImage';
-                    img.src = project.media.src;
-                    img.alt = project.media.title;
-                    img.className = 'img-fluid';
-                    img.loading = 'lazy';
+                        const img = document.createElement('img');
+                        img.id = 'portfolioImage';
+                        img.src = project.media.src;
+                        img.alt = project.media.title;
+                        img.className = 'img-fluid';
+                        img.loading = 'lazy';
 
-                    a.appendChild(img);
-                    col.appendChild(a);
-                } else if (project.media.type === 'iframe' || project.media.type === 'video') {
-                    const iframe = document.createElement('iframe');
-                    iframe.src = project.media.src;
-                    iframe.title = project.media.title;
-                    iframe.allowFullscreen = true;
-                    iframe.className = 'w-100';
-                    iframe.style.aspectRatio = '16 / 9';
-                    col.appendChild(iframe);
-                }
+                        a.appendChild(img);
+                        col.appendChild(a);
+                    } else if (project.media.type === 'iframe' || project.media.type === 'video') {
+                        const iframe = document.createElement('iframe');
+                        iframe.src = project.media.src;
+                        iframe.title = project.media.title;
+                        iframe.allowFullscreen = true;
+                        iframe.className = 'w-100';
+                        iframe.style.aspectRatio = '16 / 9';
+                        col.appendChild(iframe);
+                    }
 
-                if (project.link !== 'n/a') {
-                    const aTitle = document.createElement('a');
-                    aTitle.href = project.link;
-                    aTitle.target = '_blank';
+                    if (project.link !== 'n/a') {
+                        const aTitle = document.createElement('a');
+                        aTitle.href = project.link;
+                        aTitle.target = '_blank';
 
-                    const h4 = document.createElement('h4');
-                    h4.textContent = project.title;
-                    aTitle.appendChild(h4);
-                    col.appendChild(aTitle);
-                } else {
-                    const h4 = document.createElement('h4');
-                    h4.textContent = project.title;
-                    col.appendChild(h4);
-                }
+                        const h4 = document.createElement('h4');
+                        h4.textContent = project.title;
+                        aTitle.appendChild(h4);
+                        col.appendChild(aTitle);
+                    } else {
+                        const h4 = document.createElement('h4');
+                        h4.textContent = project.title;
+                        col.appendChild(h4);
+                    }
 
-                const h5 = document.createElement('h5');
-                h5.textContent = project.projectType;
-                col.appendChild(h5);
+                    const h5 = document.createElement('h5');
+                    h5.textContent = project.projectType;
+                    col.appendChild(h5);
 
-                if (project.projectDescription) {
-                    const p1 = document.createElement('p');
-                    p1.textContent = project.projectDescription;
-                    col.appendChild(p1);
-                }
+                    const br = document.createElement('br');
+                    col.appendChild(br);
 
-                if (project.projectCreation) {
-                    const p2 = document.createElement('p');
-                    p2.textContent = project.projectCreation;
-                    col.appendChild(p2);
-                }
+                    // Toggle button
+                    const toggleButton = document.createElement('button');
+                    toggleButton.textContent = 'Show Details';
+                    toggleButton.className = 'btn btn-md custom-toggle-btn mb-2';
 
-                container.appendChild(col);
-            });
-        })
-        .catch(error => console.error('Error loading JSON:', error));
-});
+                    // Container for <p> elements
+                    const detailsDiv = document.createElement('div');
+                    detailsDiv.style.display = 'none';
+
+                    if (project.projectDescription) {
+                        const p1 = document.createElement('p');
+                        p1.textContent = project.projectDescription;
+                        detailsDiv.appendChild(p1);
+                    }
+
+                    if (project.projectCreation) {
+                        const p2 = document.createElement('p');
+                        p2.textContent = project.projectCreation;
+                        detailsDiv.appendChild(p2);
+                    }
+
+                    // Button click toggles the details visibility
+                    toggleButton.addEventListener('click', () => {
+                        const isHidden = detailsDiv.style.display === 'none';
+                        detailsDiv.style.display = isHidden ? 'block' : 'none';
+                        toggleButton.textContent = isHidden ? 'Hide Details' : 'Show Details';
+                    });
+
+                    const buttonWrapper = document.createElement('div');
+                    buttonWrapper.className = 'text-center';
+                    buttonWrapper.appendChild(toggleButton);
+
+                    col.appendChild(buttonWrapper);
+
+                    col.appendChild(detailsDiv);
+
+                    container.appendChild(col);
+                });
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+    });
 </script>
 
 </html>

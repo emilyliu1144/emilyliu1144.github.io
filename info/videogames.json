@@ -140,7 +140,7 @@
 
     "projectDescription": "AR Photo Booth is a Windows PC app where you can take photos, and interact with bears in a digital environment using AR body tracking. You can set the chroma key by clicking on the camera feed for selecting a specified color, and changing the slider values for the border and color feathering. Once it's set, you're now ready to take some pictures! The bears follow your head and wrists using MediaPipe Solutions' Body Tracking Model. When you move your head and hands near the top of the screen, the bears head towards the back of the scene. Moving them near the bottom of the screen, brings the bears closer to the camera. After pressing the button, a 5-second countdown will start and the snapped photo shows up on the second monitor. If you like the picture shown, you can save it and it will show up in the current folder of the app!",
 
-    "projectCreation": "This project was created in Unity for a Special Topic Presentation with the purpose of teaching my peers how to create and use images in-game. This project was showcased at Treefort South and GIMM's Senior Showcase in Spring 2025. The bear 3D model was created using Blender.",
+    "projectCreation": "This project was created in Unity for a Special Topic Presentation with the purpose of teaching my peers how to create and use images in-game, and a little bit about MediaPipe. This project was showcased at Treefort South and GIMM's Senior Showcase in Spring 2025. The bear 3D model was created using Blender.",
 
     "media": {
       "type": "video",
@@ -153,9 +153,9 @@
     "title": "Militant Mayhem",
     "projectType": "Solo Project",
 
-    "projectDescription": "*description unavailable at the moment*",
+    "projectDescription": "Militant Mayhem is a third-person arena shooter where you play as an orange man wielding a jet pack and laser gun. His mission is to defeat Big Big, a giant dancing soldier who dreams of making the sky pink. Jump, dash, and shoot your way around the arena to defeat the endlessly spawning (and screaming) enemies and complete your mission!",
 
-    "projectCreation": "",
+    "projectCreation": "This project was made in Unreal Engine, and built for Windows PC. All the assets are from Fab, Epic Games's asset store front. The inspiration for this game were those bright colored mobile game ads, where the gameplay is bad on purpose, for the humor; and Earth Defense Force for the gameplay. The main goal of this project was to learn Unreal Engine.",
 
     "media": {
       "type": "video",
