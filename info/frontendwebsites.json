@@ -24,7 +24,7 @@
 
     "media": {
       "type": "video",
-      "src": "",
+      "src": "https://www.youtube.com/embed/G9Cb4C_O4KA",
       "title": "crudapi"
     },
     "link": "n/a"
@@ -39,7 +39,7 @@
 
     "media": {
       "type": "video",
-      "src": "",
+      "src": "https://www.youtube.com/embed/V0cX5Az4HbM",
       "title": "gimmalumni"
     },
     "link": "https://gimmalumni.com/"
@@ -50,11 +50,11 @@
 
     "projectDescription": "Blue Note Reserve is a React Native app that allows students in Boise State University's Music Department to reserve practice rooms in the Morrison Center, and earn badges and titles for using them. This app is planned to link with Zoom Rooms, Google Calendar, and Discord. It will be available for students to download on Android and iOS. Zoom Rooms allows students and professors to see if the room is occupied, Google Calendar is used to add your practice room reservation, and Discord to showcase the students' unlocked badges and titles based on their time in the practice rooms. The basic functionality of the app is completed; UI/UX, page styles, some unfinished features and publishing will be given to the next team of students to finish.",
 
-    "projectCreation": "This project was created with 7 other students, and made with React Native. We worked with a client, a professor from the music department, to create this app and modernize their room reservation system. My contributions to the project was creating and styling the the Home Page, and started on the Badges and Titles Page. I've created the other pages for the next team to work on.",
+    "projectCreation": "This project was created with 7 other students, and made with React Native. We worked with a client, a professor from the music department, to create this app and modernize their room reservation system. My contributions to the project was creating and styling the the Home Page, and started on the Badges and Titles Page. I've created the other pages for the next team to work on. The video only shows my branch of the project, what you see isn't the current state of the app.",
 
     "media": {
       "type": "video",
-      "src": "",
+      "src": "https://www.youtube.com/embed/yetk_OJW7OM",
       "title": "bluenotereserve"
     },
     "link": "n/a"
